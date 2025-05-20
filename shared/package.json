@@ -1,0 +1,13 @@
+{
+  "name": "shared",
+  "private": true,
+  "license": "UNLICENSED",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    
+  }
+}

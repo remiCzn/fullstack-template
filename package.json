@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "fix": "biome check --fix",
+    "frontend": "pnpm --parallel --filter=frontend --filter=shared dev",
+    "backend": "pnpm --parallel --filter=backend --filter=shared dev",
+    "build:frontend": "pnpm --parallel --filter=frontend --filter=shared run build",
+    "build:backend": "pnpm --parallel --filter=backend --filter=shared run build"
+  },
+  "dependencies": {
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/node": "^22.15.19",
+    "typescript": "~5.8.3"
+  },
+  "dependenciesMeta": {
+    "shared": {
+      "injected": true
+    }
+  },
+  "license": "UNLICENSED"
+}
